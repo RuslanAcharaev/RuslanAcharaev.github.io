@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0 15px;
+    background-color: #99d8c1;
+    font-family: "Roboto", sans-serif;
+}
+
+.cv-grid {
+    display: grid;
+    margin-top: 100px;
+    row-gap: 3px;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 30px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    border: 1px solid rgba(112, 109, 109, 0.46);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bio-card-body {
+    text-align: end;
+    margin: 20px;
+    flex: 1;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 12px auto;
+}
+
+p {
+    font-size: 22px;
+    margin: 10px auto;
+}
+
+.bio-card-image {
+    display: block;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: -80px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(112, 109, 109, 0.46);
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 3px;
+}
+
+.skills-card-body {
+    width: 100%;
+}
+
+.skills-card-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.skill {
+    display: block;
+    width: fit-content;
+    padding: 5px;
+    margin: 2px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(112, 109, 109, 0.46);
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 1px 3px 9px 0px;
+}
+
+.skill:nth-child(even) {
+    background-color: rgba(221, 221, 221, 0.75);
+}
+
+.about-card-text {
+    padding: 0 5px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(112, 109, 109, 0.46);
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 9px #e8e8e8;
+}
+
+.about-card-text > p {
+    font-size: 18px;
+}
+
+.contacts-card-body {
+    width: 100%;
+}
+
+.contacts-card-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.contact {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding: 3px;
+    height: 20px;
+    margin: 2px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(112, 109, 109, 0.46);
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 1px 3px 9px 0px;
+}
+
+.icon {
+    height: 30px;
+    padding: 0 3px;
+}
+
+@media (max-width: 674px) {
+    .bio-card.container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .bio-card-body {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .bio-card-image {
+        margin-bottom: 0;
+    }
+}
+
+
+
